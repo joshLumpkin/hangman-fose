@@ -1,55 +1,82 @@
 body {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #BEADFA; 
+    color: #000; 
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px; 
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: #FFF8C9 ;
 }
 
 #wordDisplay {
     font-size: 5rem;
+    color: #DFCCFB;
+    margin-bottom: 20px;
+}
+
+#gameMessage {
+    color: #FFF8C9;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 #keyboard {
     width: 85vw;
     margin-left: auto;
     margin-right: auto;
+    background-color: #D0BFFF; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .letterBtn {
-    font-size: 1.3rem;
-    width: 40px;
-    height: 40px;
-    margin: 4px;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #DFCCFB;
+    color: #000; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.newGame {
-    padding: 3px;
-    margin: 3px;
-    font-size: .8rem;
+.letterBtn:hover {
+    background-color: #FFF8C9; 
 }
 
 .wrong {
-    background-color: lightcoral;
-    color: white;
+    background-color: #FFF8C9; 
+    color: #000; /* Black */
 }
 
 .correct {
-    background-color: lightgreen;
-    color: white;
+    background-color: #BEADFA; 
+    color: #000; 
 }
 
 #hangmanImage {
     width: 200px;
     height: 160px;
     position: relative;
-    margin: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
 }
+
 
 .post {
     width: 10px;
     height: 150px;
     position: absolute;
-    background-color: black;
+    background-color: #F2F7A1;
     left: 15%;
     bottom: 10px;
 }
@@ -59,7 +86,7 @@ body {
     height: 10px;
     position: absolute;
     bottom: 0;
-    background-color: black;
+    background-color: #F2F7A1;
 }
 
 .beam {
@@ -67,14 +94,14 @@ body {
     height: 10px;
     position: absolute;
     left: 15%;
-    background-color: black;
+    background-color: #F2F7A1;
 }
 
 .rope {
     width: 5px;
     height: 15px;
     position: absolute;
-    background-color: black;
+    background-color: #F2F7A1;
     left: 47.5%;
     top: 10px;
 }
@@ -83,7 +110,7 @@ body {
     width: 30px;
     height: 30px;
     background-color: transparent;
-    border: 2px solid black;
+    border: 2px solid #F2F7A1;
     border-radius: 50%;
     position: absolute;
     top: 25px;
@@ -93,7 +120,7 @@ body {
 .body {
     width: 2px;
     height: 50px;
-    background-color: black;
+    background-color: #F2F7A1;
     position: absolute;
     top: 57px;
     left: 48%;
@@ -106,7 +133,7 @@ body {
 .left-arm, .right-arm, .left-leg, .right-leg {
     width: 2px;
     height: 30px;
-    background-color: black;
+    background-color: #F2F7A1;
 }
 
 .left-arm {
@@ -135,4 +162,19 @@ body {
     top: 101px;
     left: 53.1%;
     transform: rotate(-45deg);
+}
+
+.newGame {
+    background-color: #F2F7A1;
+    border: none; 
+    color: black; 
+    padding: 15px 32px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px; 
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
